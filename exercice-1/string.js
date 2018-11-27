@@ -46,7 +46,7 @@ function snake_case(chaine)
 {
 	chaine = chaine.split(" ");
 	chaine = chaine.join("_")
-	return chaine;
+	return chaine.substr(0,chaine.length).toLowerCase();
 }
 console.log(snake_case("Hello World sal"));
 
