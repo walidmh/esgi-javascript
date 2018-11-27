@@ -7,56 +7,48 @@ function ucfirst(mot)
 	return mot.substr(0,1).toUpperCase()+mot.substr(1,mot.length).toLowerCase();
 }
 
-function capitalize(chaine)
-{
-	
- 
-    while (chaine[i] != '\0')
-    {
-        
-        if (chaine[i]  >= 97 &&  chaine[i] <= 122)
-        {
-            chaine[i] = chaine[i] - 32;
+function capitalize(str1){
+
+    if(str1.length > 0) {
+
+        str1 = str1.split(" ");
+
+        for (var i = 0, x = str1.length; i < x; i++){
+
+            str1[i] = str1[i][0].toUpperCase() + str1[i].substring(1);
+
         }
-    	i++;
+        
+        var res = str1.join(" ");
+        return res;
     }
-    
-	
 }
+function camelCase(str1){
 
-function camelCase(chaine)
-{
-	
- 
-    while (chaine[i] != '\0')
-    {
-        
-        if (chaine[i]  >= 97 &&  chaine[i] <= 122)
-        {
-            chaine[i] = chaine[i] - 32;
+    if(str1.length > 0) {
+
+        str1 = str1.split(" ");
+
+        for (var i = 0, x = str1.length; i < x; i++){
+
+            str1[i] = str1[i][0].toUpperCase() + str1[i].substring(1);
+           
         }
         
-
-        else if(chaine[i] = ' ')
-        {
-        	chaine[i].replace(/ /g,"");
-        }
-    	i++;
+        var res = str1.join(" ");
+        var fin = res.split(" ").join("");
+        return fin;
     }
-    
-	
 }
 
 
 function snake_case(chaine)
 {
-	for(i==0 ; i<=chaine.length ; i++)
-	{
-		chaine[i].replace(/ /g,"_");
-		chaine = chaine + chaine[i];
-	}
+	chaine = chaine.split(" ");
+	chaine = chaine.join("_")
 	return chaine;
 }
+console.log(snake_case("Hello World sal"));
 
 
 
