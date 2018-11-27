@@ -48,7 +48,24 @@ function snake_case(chaine)
 	chaine = chaine.join("_")
 	return chaine.substr(0,chaine.length).toLowerCase();
 }
-console.log(snake_case("Hello World sal"));
+
+
+function leet(chaine)
+{
+	for ( i = 0, x = chaine.length; i < x; i++){
+
+           chaine = chaine.replace('a' , '4');
+           chaine = chaine.replace('e' , '3');
+           chaine = chaine.replace('i' , '1');
+           chaine = chaine.replace('o' , '0');
+           chaine = chaine.replace('u' , '_');
+           chaine = chaine.replace('y' , '7');
+          
+
+        }
+        return chaine ;
+
+}
 
 
 
