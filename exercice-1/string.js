@@ -58,5 +58,5 @@ function snake_case(chaine)
 	return chaine;
 }
 
-console.log(snake_case("walid est en classe"));
+
 
