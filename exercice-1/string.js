@@ -2,7 +2,7 @@ var mot = "";
 var chaine = "";
 var i = 0;
 
-function ucFirst(mot)
+function ucfirst(mot)
 {
 	return mot.substr(0,1).toUpperCase()+mot.substr(1,mot.length).toLowerCase();
 }
