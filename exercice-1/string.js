@@ -58,7 +58,7 @@ function leet(chaine)
            chaine = chaine.replace('e' , '3');
            chaine = chaine.replace('i' , '1');
            chaine = chaine.replace('o' , '0');
-           chaine = chaine.replace('u' , '_');
+           chaine = chaine.replace('u' , '(_)');
            chaine = chaine.replace('y' , '7');
           
 
